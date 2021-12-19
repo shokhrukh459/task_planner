@@ -21,8 +21,7 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
 
                       ),
-                      child: Row(
-                        children: [],
+
                       ),
                     ),
                   ),
