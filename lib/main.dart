@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_planner/screens/home_page.dart';
 
 void main(){
   runApp(MyApp());
@@ -9,29 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Column(
-          children: [
-            CustomScrollView(
-              slivers: [
-                SliverAppBar(
-                  expandedHeight: 200,
-                  flexibleSpace: FlexibleSpaceBar(
-                    background: Container(
-                      decoration: BoxDecoration(
+      title: "task planner",
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
 
-                      ),
-
-                      ),
-                    ),
-                  ),
-
-                )
-              ],
-            )
-          ],
-        ),
-      ),
     );
   }
 }
